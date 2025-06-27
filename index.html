@@ -6,36 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
-     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background: url('background.png') center center no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      margin: 0;
-      padding: 0;
-    }
-    
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background: url('background.png') no-repeat center center fixed;
+          background-size: cover;
+          margin: 0;
+          padding: 0;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      
+        h2 {
+          margin-top: 20px;
+          font-size: 28px;
+          color: #3b2f00;
+          text-shadow: 1px 1px 1px #fff5d9;
+        }
+      
+        .meerkat-img {
+          width: 200px;
+          max-width: 80%;
+          margin-top: 10px;
+        }
+      
+        .coin-counter {
+          font-size: 24px;
+          margin: 20px 0;
+          font-weight: bold;
+          color: #3b2f00;
+        }
+      
+        .tap-btn {
+          font-size: 22px;
+          padding: 15px 30px;
+          background-color: #f4a261;
+          border: none;
+          border-radius: 12px;
+          cursor: pointer;
+          box-shadow: 2px 4px #b5651d;
+          margin-bottom: 40px;
+        }
+</style>
 
-    .meerkat-img {
-      width: 250px;
-      margin-top: 30px;
-    }
-    .coin-counter {
-      font-size: 24px;
-      margin: 20px 0;
-      font-weight: bold;
-    }
-    .tap-btn {
-      font-size: 22px;
-      padding: 15px 30px;
-      background-color: #f4a261;
-      border: none;
-      border-radius: 12px;
-      cursor: pointer;
-      box-shadow: 2px 4px #b5651d;
-    }
-  </style>
 </head>
 <body>
   <h2>Meerkat</h2>
